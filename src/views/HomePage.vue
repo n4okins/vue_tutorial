@@ -5,19 +5,14 @@
     <v-container>
       <p>パラグラフはここ</p>
     </v-container>
-    <!-- コンポーネントは htmlタグみたいに入れられる -->
-    <BottomNavigationButton/>
 
   </div>
 </template>
 
 <script>
-import BottomNavigationButton from "@/components/BottomNavigationButton";
-
 export default {
   name: "HomePage",
   components: {
-    BottomNavigationButton
   }
 }
 </script>
