@@ -1,20 +1,17 @@
 <template>
-  <v-card>
+  <v-footer>
     <v-bottom-navigation color="primary" v-model="isActive" absolute>
-      <v-btn value="menu01">
-        <span>menu01</span>
-        <v-icon>mdi-history</v-icon>
+      <v-btn value="home" to="/">
+        <span>home</span>
       </v-btn>
-      <v-btn value="menu02">
-        <span>menu02</span>
-        <v-icon>mdi-heart</v-icon>
+      <v-btn value="second" to="/second">
+        <span>second</span>
       </v-btn>
-      <v-btn value="menu03">
-        <span>menu03</span>
-        <v-icon>mdi-map-marker</v-icon>
+      <v-btn value="third" to="/third">
+        <span>third</span>
       </v-btn>
     </v-bottom-navigation>
-  </v-card>
+  </v-footer>
 </template>
 
 <script>
@@ -23,7 +20,7 @@ export default {
   data() {
     // data()が関数であればいいのでアロー関数でも可
     return {
-      isActive: 'menu01'
+      isActive: 'home'
     }
   }
 }

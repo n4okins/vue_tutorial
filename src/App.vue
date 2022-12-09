@@ -5,7 +5,9 @@
       <!-- コンポーネントは htmlタグみたいに入れられる -->
 
       <AppBar/>
-      <HomePage/>
+      <v-container>
+        <router-view/>
+      </v-container>
       <BottomNavigationButton/>
 
     </v-main>
@@ -15,13 +17,12 @@
 <script>
 import AppBar from "@/components/AppBar";
 import BottomNavigationButton from "@/components/BottomNavigationButton";
-import HomePage from './views/HomePage';
 
 
 export default {
   name: 'App',
   components: { // App.vue（ここ）のtemplateタグ内で使うコンポーネントを指定する
-    AppBar, HomePage, BottomNavigationButton
+    AppBar, BottomNavigationButton
   },
 
   data: () => ({
